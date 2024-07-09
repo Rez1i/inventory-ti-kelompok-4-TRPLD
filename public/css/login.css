@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'BalooDa';
+    src: url(../fonts/BalooDa-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Magmawave';
+    src: url(../fonts/MagmaWaveCaps.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.background-img {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.background-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('assets/gambarpoli/IMG-20240701-WA0007.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1.5px);
+    /* Tambahkan efek blur */
+    z-index: -1;
+    /* Pastikan efek blur berada di belakang konten */
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 19px;
+    color: #1a1a1a;
+    font-family: 'Roboto';
+}
+
+.banner-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #ffa552;
+    width: 449px;
+    height: 600px;
+}
+
+img.icon-ti {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+}
+
+h1.title-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+
+h1.title-2 {
+    font-family: 'Magmawave';
+    font-size: 64px;
+    margin-top: 20px;
+}
+
+h1.title-3 {
+    font-family: 'BalooDa';
+    font-size: 24px;
+    margin-top: -20px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.title-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.form-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 20px 20px 0px;
+    background-color: #fff;
+    width: 449px;
+    height: 600px;
+    padding: 40px;
+}
+
+p.title-register {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a.title-register {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffa552;
+
+}
+
+p.title-forget {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+a.title-forget {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffa552;
+
+}
+
+.btn-login {
+    font-family: 'Roboto';
+    font-weight: 700;
+    background: #fff;
+    color: #ffa552 !important;
+    font-size: 22px;
+    padding: 8px 20px;
+    border-radius: 15px;
+    border: 2px solid #ffa552;
+    text-decoration: none;
+}
+
+.btn-login:hover {
+    background: #ffa552;
+    color: #fff !important;
+}

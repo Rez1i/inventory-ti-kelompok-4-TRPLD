@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'BalooDa';
+    src: url(../fonts/BalooDa-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Magmawave';
+    src: url(../fonts/MagmaWaveCaps.otf);
+}
+
+.navbar-icon {
+    display: flex;
+    align-items: center;
+}
+
+img.ti-icon {
+    height: 50px;
+    width: 50px;
+    display: inline;
+    position: relative;
+}
+
+.vertical-divider {
+    width: 3px;
+    height: 50px;
+    background-color: #1a1a1a;
+    margin-left: 6px;
+    margin-right: 15px;
+}
+
+.navbar-icon a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-icon a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar-icon a h2,
+.navbar-icon a p {
+    margin: -3px;
+}
+
+.navbar-icon a h2 {
+    font-family: 'Magmawave';
+    color: #1a1a1a;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.navbar-icon a p {
+    font-family: 'BalooDa';
+    color: #1a1a1a;
+    font-size: 20px;
+}
+
+header.navbar-pertama {
+    background: linear-gradient(135deg, #ffd752, #ffa552);
+}
+
+header.navbar-kedua {}
+
+/* Tampilan untuk perangkat mobile */
+@media (max-width: 768px) {
+    .navbar-icon {
+        display: flex;
+        justify-content: center;
+        /* Menyelaraskan semua elemen ke tengah */
+        align-items: center;
+        /* Menyelaraskan semua elemen ke tengah */
+        flex-wrap: wrap;
+        /* Mengizinkan elemen untuk melilit ke baris baru jika tidak cukup tempat */
+    }
+
+    .vertical-divider {
+        width: 3px;
+        height: 50px;
+        background-color: #1a1a1a;
+        margin-left: 6px;
+        margin-right: 15px;
+    }
+
+
+    img.ti-icon {
+        width: 50px;
+        height: auto;
+    }
+
+    .navbar-title h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .navbar-title p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+}
