@@ -1,0 +1,4 @@
+Petunjuk Awal Menjalani Migrasi
+Menambahkan langsung akun Administator ke tabel user sekaligus migrasi
+
+php artisan migrate --seed
